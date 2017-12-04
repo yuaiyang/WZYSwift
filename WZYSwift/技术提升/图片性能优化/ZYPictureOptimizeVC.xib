@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZYPictureOptimizeVC" customModule="WZYSwift" customModuleProvider="target">
+            <connections>
+                <outlet property="avatarImagView" destination="0F7-kS-ag8" id="lDQ-pm-0Bv"/>
+                <outlet property="iconImagView" destination="DwM-0h-oNQ" id="CaG-ES-1Ek"/>
+                <outlet property="iconImgV" destination="Mhf-jy-7qG" id="E6t-cF-3dt"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DwM-0h-oNQ">
+                    <rect key="frame" x="100" y="100" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="K10-TY-oHq"/>
+                        <constraint firstAttribute="height" constant="100" id="Rw1-lv-vha"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test.png" translatesAutoresizingMaskIntoConstraints="NO" id="Mhf-jy-7qG">
+                    <rect key="frame" x="100" y="210" width="16" height="16"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0F7-kS-ag8">
+                    <rect key="frame" x="208" y="100" width="102" height="100"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="0F7-kS-ag8" firstAttribute="top" secondItem="DwM-0h-oNQ" secondAttribute="top" id="3Uj-0q-e64"/>
+                <constraint firstItem="0F7-kS-ag8" firstAttribute="height" secondItem="DwM-0h-oNQ" secondAttribute="height" id="AfY-HU-McO"/>
+                <constraint firstItem="DwM-0h-oNQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="100" id="DTf-GV-Ufo"/>
+                <constraint firstItem="0F7-kS-ag8" firstAttribute="leading" secondItem="DwM-0h-oNQ" secondAttribute="trailing" constant="8" id="Gax-ty-bbx"/>
+                <constraint firstItem="0F7-kS-ag8" firstAttribute="width" secondItem="DwM-0h-oNQ" secondAttribute="width" id="lBo-FJ-vTC"/>
+                <constraint firstItem="Mhf-jy-7qG" firstAttribute="top" secondItem="DwM-0h-oNQ" secondAttribute="bottom" constant="10" id="mVT-ah-Pth"/>
+                <constraint firstItem="Mhf-jy-7qG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="100" id="qdf-2O-nDw"/>
+                <constraint firstItem="DwM-0h-oNQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="yjL-8o-fE1"/>
+            </constraints>
+            <point key="canvasLocation" x="34.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="test.png" width="16" height="16"/>
+    </resources>
+</document>

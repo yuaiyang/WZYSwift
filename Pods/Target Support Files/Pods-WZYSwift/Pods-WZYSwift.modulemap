@@ -1,0 +1,6 @@
+framework module Pods_WZYSwift {
+  umbrella header "Pods-WZYSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}
